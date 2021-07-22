@@ -197,3 +197,23 @@ hr{
         margin-bottom: 80px;
     }
 }
+@media(max-width:450px){
+    .div-one{
+        display: initial;
+        border-left: 8px solid hsl(180, 66%, 49%);
+        position: relative;
+        top: 257px;
+        left: -158px;
+        height: 40px;
+    }
+    #box-2{
+        top: 38px;
+    }
+    #line-two{
+        top:295px;
+    }
+    #box-3{
+        top: 76px;
+        margin-bottom: 140px;
+    }
+}
