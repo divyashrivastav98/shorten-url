@@ -1,0 +1,85 @@
+.container{
+    padding-top: 40px;
+    color:hsl(257, 7%, 63%);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+a{
+    color: hsl(257, 7%, 63%);
+}
+
+.navbar-nav>li>a {
+    padding-top: 20px;
+}
+.navbar-nav>li>a:hover {
+   background-color: #fff;
+   color:black;
+   cursor: pointer;
+}
+.navbar-toggle .icon-bar {
+    background-color: hsl(257, 7%, 63%);
+}
+.btn{
+    border-radius: 35px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    margin-top: 10px;
+    border: none;
+    padding: 10px 25px;
+}
+.btn-primary{
+    background-color: hsl(180, 66%, 49%);
+    color: #fff;
+}
+.btn-primary:hover{
+    background-color: #9AE3E2;
+}
+.btn-secondary{
+    background-color: #fff;
+}
+.hr-break{
+    display: none;
+}
+
+@media(max-width:500px){
+    #myNavbar{
+        background-color: hsl(257, 27%, 26%);
+        margin-top: 20px;
+        border-radius: 10px;
+        font-size: 18px;
+    }
+    .hr-break{
+        display: block;
+        color: hsl(0, 0%, 75%);
+    }
+    .navbar-nav > li > a {
+        text-align: center;
+        color: white;
+    }
+    #last{
+        padding-bottom: 15px;
+    }
+    .nav>li{
+        text-align: center;
+    }
+    .btn-secondary{
+        background-color: hsl(257, 27%, 26%);
+        color: #fff;
+        font-size: 18px;
+        margin-top: -10px;
+    }
+    .btn-primary{
+        margin-bottom: 40px;
+        width: 80%;
+        height: 45px;
+        font-size: 18px;
+    }
+    #first{
+        margin-top: 30px;
+    }
+    .navbar-nav>li>a:hover {
+        background-color: hsl(257, 27%, 26%);
+        color:#fff;
+     }
+}

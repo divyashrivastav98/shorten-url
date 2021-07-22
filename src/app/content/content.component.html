@@ -1,0 +1,46 @@
+<div class="container">
+    <div class="row header-main">
+        <div class="col-lg-5 col-xs-12 working-img" *ngIf="!isExpanded">
+            <img src="../../assets/images/illustration-working.svg" alt="" class="work">
+        </div>
+        <div class="col-lg-6 col-xs-12 header-left" >
+            <p id="heading">More than just shorter links</p>
+            <p id="heading-p">Build your brand's recognition and get detailed insights on how your links are performing.</p>
+            <button class="btn btn-primary" id="get-start">Get Started</button>
+        </div>
+        <div class="col-lg-1"></div>
+    </div>
+    <app-short></app-short>
+</div>
+
+<div class="row stats" [ngStyle]="{'margin-top': getMarginTop()}">
+    <div class="col-lg-4 col-xs-12"></div>
+    <div class="col-lg-4 col-xs-12 stats-main">
+        <p id="stats-header">Advanced Statistics</p>
+        <p id="stats-p">Track how your links are performing across the web with our advanced statistics dashboard.</p>
+    </div>
+    <div class="col-lg-4 col-xs-12"></div>
+    <div class="col-xs-12">
+        <hr>
+    </div>
+    <div class="col-lg-1 col-xs-12"></div>
+    <div class="col-lg-3 col-xs-12  box" id="box-1">
+        <div class="wrapper-img" id="box-1-img"></div>
+        <h5 class="box-heading">Brand Recognition</h5>
+        <p class="box-content">Boost your brand recognition with each click. Generic links don't mean a thing. Branded links help instil confidence in your content.</p>
+    </div>
+    <div class="col-xs-1 div-one"></div>
+    <div class="col-lg-3 col-xs-12 box" id="box-2">
+        <div class="wrapper-img"id="box-2-img"></div>
+        <h5 class="box-heading">Detailed Records</h5>
+        <p class="box-content">Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.</p>
+    </div>
+    <div class="col-xs-1 div-one"></div>
+    <div class="col-lg-3 col-xs-12 box" id="box-3">
+        <div class="wrapper-img" id="box-3-img"></div>
+        <h5 class="box-heading">Fully Customizable</h5>
+        <p class="box-content">Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.</p>
+    </div>
+</div>
+
+

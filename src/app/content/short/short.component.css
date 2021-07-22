@@ -1,0 +1,101 @@
+#short{
+    position: relative;
+    background-color: hsl(257, 27%, 26%);
+    background-image: url('../../../assets/images/bg-shorten-desktop.svg');
+    background-size: 100%;
+    border-radius: 10px;
+}
+
+form{
+    padding: 50px 50px 0px 100px;
+}
+
+input[type="text"]{
+    height:50px
+}
+
+.btn{
+    background-color: hsl(180, 66%, 49%);
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    height:40px;
+    padding-left:30px;
+    padding-right: 30px;
+}
+.btn:hover{
+    background-color: #9AE3E2;
+}
+
+.short-btn{
+    height: 50px;
+    font-size: 700;
+}
+
+.urls{
+    margin-top: 10px;
+}
+
+.ori-link{
+    color: hsl(260, 8%, 14%);
+    padding-top: 10px;
+}
+.short-link{
+    color: hsl(180, 66%, 49%);
+    padding-top: 10px;
+    text-align: right;
+}
+.backgroundPurple{
+    background-color: hsl(257, 27%, 26%);
+}
+.backgroundPurple:hover{
+    background-color: hsl(257, 27%, 26%);
+}
+input.ng-invalid.ng-touched{
+    border: 2px solid hsl(0, 87%, 67%);
+}
+.alert{
+    font-style: italic;
+    font-size: 15px;
+    color:hsl(0, 87%, 67%);
+    padding: 0px;
+}
+@media(max-width:500px){
+    #short{
+        background-image: url('../../../assets/images/bg-shorten-mobile.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    form{
+        padding: 20px;
+    }
+    .form-group {
+        margin-bottom: 0px;
+    }
+    .short-btn{
+        width: 100%;
+    }
+    .short-link{
+        text-align: initial;
+        font-size: 16px;
+    }
+    .copy{
+        width:100%;
+    }
+    .ori-link{
+        border-bottom: 1px solid hsl(0, 0%, 75%);
+        padding-bottom: 5px;
+        font-size: 16px;
+    }
+    .btn{
+        font-size: 16px;
+    }
+    .alert{
+        font-size: 12px;
+        position: relative;
+        top: -5px
+    }
+
+}

@@ -1,0 +1,39 @@
+<div id="short">
+    <form (ngSubmit)="onSubmit()" #f="ngForm">
+        <div class="row">
+            <div class="col-lg-9 col-xs-12 form-group" >
+                <input type="text"
+                        class="form-control"
+                        placeholder="Shorten a link here..." 
+                        name="urlInput" 
+                        ngModel
+                        ([ngModel])="urlIn"
+                        required>
+            <span class="alert">{{this.urlIn}}</span>
+            </div>
+            <div class="col-lg-3 col-xs-12">
+                <button class="btn short-btn">Shorten it!</button>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="urls">
+    <ul class="list-group" *ngFor="let item of data;let i = index">
+        <li class="list-group-item">
+            <div class="row">
+                <div class="col-lg-6 col-xs-12 ori-link">
+                    {{item.original_link}}
+                </div>
+                <div class="col-lg-4 col-xs-12 short-link">
+                    <p>https://{{item.short_link}}</p>
+                </div>
+                <div class="col-lg-2 col-xs-12">
+                    <button [id]="i"
+                    class="btn copy" 
+                    (click)="onCopy(item.short_link,i)"
+                    [ngClass]="{'backgroundPurple':i==index}">Copy</button>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
